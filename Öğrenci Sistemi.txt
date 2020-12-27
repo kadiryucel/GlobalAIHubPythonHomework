@@ -1,0 +1,49 @@
+kadıryucel = "Kadir YÜCEL"
+
+liste = ["lineer cebir","mühendisliğe girişi","fizik","analiz","istatistik","cebir","robotik","elektroniğe giriş","makine öğrenmesi","yapay zeka"]
+
+for i in range(3):
+    adsoyad= input("Adınızı ve Soyadınızı Giriniz: \n")
+    if adsoyad == kadıryucel:
+        print(f"Welcome {kadıryucel}")
+        
+        print(liste,"\nBİLGİLENDİRME!!! Yukarıdan en az 3,en fazla 5 ders seçmelisiniz...") 
+        sayı = int(input("Kaç tane ders seçeceksiniz?\n"))
+        if sayı < 3 or sayı > 5:
+            print("İstenen sayıda ders seçmediniz. Sınıfı geçemediniz...")
+            break
+        elif sayı == 3:
+            for i in range(3):
+                sıra = input("{}) ".format(i+1))
+                print(f"Seçilen ders {sıra}")
+
+        elif sayı == 4:
+            for i in range(4):
+                sıra = input("{}) ".format(i+1))
+                print(f"Seçilen ders {sıra}")
+        elif sayı == 5:
+            for i in range(5):
+                sıra = input("{}) ".format(i+1))
+                print(f"Seçilen ders {sıra}")
+
+        ders1 = input("Yukarıda yazdığınız derslerden birisiniz seçiniz: ")
+        print("Aşağıdaki mıdterm,final ve project yerlerine notlarınızı yazınız...")
+        mıdterm = float(input("Midterm Notunu Giriniz: "))
+        final = float(input("Final Notunu Giriniz: "))
+        project = float(input("Project Notunu Giriniz: "))
+        ort = (( mıdterm * 30 ) / 100 ) + ( ( final * 50) / 100 ) + ( ( project * 20 ) / 100 )
+        if 90 <= ort:
+            print("Ortalamanız: {}\nNotunuz: AA\nSınıfı geçtiniz...".format(ort))
+        elif 70 <= ort <90:
+            print("Ortalamanız: {}\nNotunuz: BB\nSınıfı geçtiniz...".format(ort))
+        elif 50 <= ort < 70:
+            print("Ortalamanız: {}\nNotunuz: CC\nSınıfı geçtiniz...".format(ort))
+        elif 30 <= ort < 50:
+            print("Ortalamanız: {}\nNotunuz: DD\nSınıfı geçtiniz...".format(ort))
+        else:
+            print("Ortalamanız: {}\nNotunuz: FF\nSınıfı geçemediniz...".format(ort))
+                
+        break
+    
+    elif adsoyad != kadıryucel:       
+        print("Adınızı veya Soyadınızı Yanlış Girdiniz. Lütfen tekrar deneyiniz...")

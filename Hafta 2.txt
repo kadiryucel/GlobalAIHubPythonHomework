@@ -1,0 +1,27 @@
+ad = input("Adınız: ")
+soyad = input("Soyadınız: ")
+yas = int(input("Yaşınız: "))
+dogum_yılı = int(input("Doğum Yılınız: "))
+yas2= 2020-dogum_yılı
+yas1 = str(yas)
+dogum_yılı1 = str(dogum_yılı)
+
+if yas2 == yas:
+   print("-------------------------------------------------")
+   for a in ad.split():
+       print(a)
+   for s in soyad.split():
+       print(s)
+   for y in yas1.split():
+       print(y)
+   for d in dogum_yılı1.split():
+       print(d)
+   if yas <= 18:
+       print("You can't go out because it's too dangerous.")
+   else:
+       print("You can go out to the street.")
+   print("-------------------------------------------------")
+else:
+    print("-------------------------------------------------")
+    print("Yaşınız ile doğum tarihiniz tutmuyor.\n Sistem kapatılıyor....")
+    print("-------------------------------------------------")

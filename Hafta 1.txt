@@ -1,0 +1,16 @@
+deger0 = "Hello!"
+deger1 = 30
+deger2 = 25.8
+deger3 = [1,2,3,4,5]
+deger4 = True
+deger5 = "Merhaba!"
+
+print(type(deger0))
+print(type(deger1))
+print(type(deger2))
+print(type(deger3))
+print(type(deger4))
+print(type(deger5))
+
+print(f"{deger0} Kadir.")
+print("{} Kadir.".format(deger5))
