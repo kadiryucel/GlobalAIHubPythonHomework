@@ -12,6 +12,6 @@ Hafta 2...
 #  Homework-3
 Adam asmaca ödevini yazamadım...
 
-# Homework_Course= Öğrenci Sistemi
+# Homework_Course= Project
 Bu ödevde istenenlere ek büyük eşittir de kullanılmıştır. Çünkü öğrencinin ortalamasının o sayıya da eşit olabileceği göz önüne alınmalıdır.
 
